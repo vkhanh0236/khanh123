@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+body{
+    font-family: 'roboto',sans-serif;
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px;
+}
+.ab{
+    padding-left: 100px;
+    font-style: italic;
+}
+hr{
+    margin: 0 100px;
+}
+.div1 {
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.shadow {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    background-color: #fff;
+}
+figcaption{
+    height: 20%;
+    font-size: 30px;
+    font-weight: 500;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figure{
+    width: 100%;
+    height: 250px;
+}
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition-property: all;
+    transition-duration: 2s;
+}
+.div1 a {
+    text-decoration: none;
+}
+.anh1, .anh2, .anh3, .anh4, .anh5, .anh6{
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.anh1:hover{
+    border-radius: 20px;
+}
+.anh1:hover img{
+    transform: scale(1.2) ;
+}
+.anh2:hover{
+    border-radius: 20px;
+}
+.anh2:hover img{
+    transform: scale(1.2) ;
+}
+.anh3:hover{
+    border-radius: 20px;
+}
+.anh3:hover img{
+    transform: scale(1.2) ;
+}
+.anh4:hover{
+    border-radius: 20px;
+}
+.anh4:hover img{
+    transform: scale(1.2) ;
+}
+.anh5:hover{
+    border-radius: 20px;
+}
+.anh5:hover img{
+    transform: scale(1.2) ;
+}
+.anh6:hover{
+    border-radius: 20px;
+}
+.anh6:hover img{
+    transform: scale(1.2) ;
+}
+p{
+    font-size: 20px;
+    line-height: 2;
+    text-align: justify;
+}
+.anh-1{
+    display: block;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+}
+.div2 {
+    width: 80%;
+    height: 1000px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+}
+i{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+}
