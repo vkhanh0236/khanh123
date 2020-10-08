@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap transition</title>
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .anh-1{
+            width: 1000px;
+            height: 300px;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 100px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            background-color: #fff;
+            
+        } 
+        figure{
+            width: 100%;
+            height: 100%;
+            
+        }
+        img{
+            width: 100%;
+            height: 80%;
+            transition-property: all;
+            transition-duration: 2s;
+            
+            object-fit: cover;
+        }
+        img:hover {
+            transform: scale(1.5);
+        }
+        figcaption {
+            height: 20%;
+            font-size: 20px;
+            font-weight: 500;
+            color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+        figure:hover img{
+            transform: scale(1.5);
+        }
+        figure:hover figcaption{
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="anh-1">
+        <figure>        
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRAaeUNhCKAbGjfoJ9WPiJVd7D6HL_k0Zu7vQ&usqp=CAU" alt="anh3" title="day la anh 1">
+            <figcaption>anh 1</figcaption>
+        </figure>
+        
+        <figure>    
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRMXsiMKe5hrXKgxFg8863g68TK6NTuTGSww&usqp=CAU" alt="anh2" title="day la anh 2">
+            <figcaption>anh 2</figcaption>
+        </figure>
+        
+        <figure>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmgklgsPKql0NNkwzLgYmMaVxWFVG_dRsxcA&usqp=CAU" alt="anh3" title="day la anh 3">
+            <figcaption>anh 3</figcaption>
+        </figure>
+        
+    </div>
+</body>
+</html>
