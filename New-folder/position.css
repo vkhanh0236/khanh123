@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+}
+
+.product{
+    width: 100%;
+    height: 370px;
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.product .item{
+    width: 20%;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+
+.item .image-item{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.item .date{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.discount{
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.flash_sale{
+    width: 100%;
+    height: 100%;
+    background-color: #FED750;
+    position: relative;
+}
+
+
+.flash_sale::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    display: block;
+}
+
+.flash_sale::before{
+    bottom: -10px;
+    border-width: 10px 35px 0px 0px;
+    border-color: #FED750 transparent transparent transparent;
+}
+
+.flash_sale::after{
+    bottom: -10px;
+    right: 0;
+    border-width: 10px 35px 10px 0px;
+    border-color: transparent #FED750 transparent transparent;
+}
+
+.flash_sale .percent{
+    color: #EE4D2D;
+    padding: 4px 5px 0px 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.flash_sale .content{
+    color: #fff;
+    padding: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item .info{
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+.info .price, .sold ,p{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price{
+    color: #EE4D2D;
+    font-size: 25px;
+}
+
+span{
+    font-size: 18px;
+}
+.info .sale{
+    border-radius: 50px;
+    padding: 3px 0px 2px 0px;
+    background: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/934cc0df9edb42d22c38044417c8a94a.png)0 100% no-repeat;
+
+    background-size: cover;
+    color: white;
+}
+.item{
+    margin-right: 20px;
+}
