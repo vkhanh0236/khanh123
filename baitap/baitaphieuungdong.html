@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập hiệu ứng động</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .login{
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            transition-duration: 2s;
+            transition-property: all;
+
+        }
+        .login:hover{
+            border-radius: 100px;
+            background-color: red;
+        }
+        .div1{
+            width: 50px;
+            height: 50px;
+            animation-duration: 1s;
+            animation-name: change;
+            animation-iteration-count: infinite;
+            margin: 100px 100px 100px 100px;
+            animation-delay: 500ms;
+            border: none;
+            padding-bottom: 200px;
+        }
+        .anh-1{
+            object-fit: cover;
+        }
+        @keyframes change{
+          form {
+              width: 50px;
+              height: 50px;
+          }
+          to {
+              transform: scale(1.1);
+          }
+        }
+        .anh{
+            width: 420px;
+            height: 420px;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: gray;
+        }
+        figure{
+            width: 120px;
+            height: 120px;
+            margin: 10px 10px 10px 10px;
+        }
+        .anh-h{
+            width: 100%;
+            height: 100%;
+            transition-property: all;
+            transition-duration: 1s;
+            object-fit: cover;
+        }
+        .anh-h:hover{
+            transform: scale(1.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <p>login</p>
+    </div>
+    <div class="div1">
+        <img class="anh-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6OlFTLM9x3sznawyVip9kZUlM1Swxzh0npA&usqp=CAU" alt="">
+    </div>
+    <div class="anh">
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-1.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-2.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-3.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-4.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-5.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-6.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-7.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-8.jpg" alt=""></figure>
+        <figure><img class="anh-h" src="https://www.elle.vn/wp-content/uploads/2017/07/25/hinh-anh-dep-9.jpg" alt=""></figure>
+    </div>
+</body>
+</html>
