@@ -1,0 +1,129 @@
+.a-1{
+    background-color: gray;
+}
+.a-2{
+    margin: auto;
+    width: 450px;
+    height: 550px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid white;
+}
+.a-3{
+    padding:10px 0 0 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.a-4{
+    padding:5px 0 0 10px;
+}
+.dk{
+    color: #1c1e21;
+    font-size: 30px;
+    line-height: 38px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.d2{
+    padding-left: 15px;
+    color: #606770;
+    font-size: 15px;
+    line-height: 24px;
+    border-bottom-style: solid ;
+    border-bottom-width: 1px;
+    border-bottom-color:  #ccd0d5;
+}
+form{
+    padding: 15px;
+}
+input{
+    background-color: #f4f7fa;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 12px;
+    border: solid;
+    border-color:  #ccd0d5;
+    border-width: 1px;
+}
+.ten input{
+    width: 172px;
+    border-radius: 6px;
+    margin: 5px;
+    margin-bottom: -5px;
+}
+.superid input{
+    margin-left: 5px;
+    margin-bottom: 15px;
+    width: 91.5%;
+    border-radius: 6px;
+}
+.ns{
+    padding-left: 5px;
+    color: #606770;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.icon{
+    color: gray;
+}
+.cot{
+    border-radius: 4px;
+    border-color:  #ccd0d5;
+    height: 36px;
+    width: 28%;
+    margin: 5px;
+    font-size: 15px;
+}
+.gioitinh{
+    padding-left: 5px;
+    color: #606770;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.nope{
+    color: #1c1e21;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ccd0d5;
+    font-size: 15px;
+    display: inline-block;
+    height: 36px;
+    margin: 8px 6px 6px;
+    padding: 0 28px 0 10px;
+    position: relative;
+}
+.nope input{
+        height: 36px;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.nope label{
+    line-height: 36px;
+    padding: 0 28px 0 10px;
+}
+.dieukhoan{
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+}
+.dieukhoan a{
+    color: #385898;
+    cursor: pointer;
+    text-decoration: none;
+}
+.laptk button{
+    background-color: #42b72a;
+    width: 194px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    color: white;
+    margin-left: 110px;
+}

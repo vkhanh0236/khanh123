@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+img{
+    width: 300px;
+    height: 200px;
+    margin-left: -30px;
+}
+h2{
+    margin-top: -50px;
+    font-size: 30px;
+    width: 500px;
+    line-height: 32px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+}
+.giaodien{
+    background-color: #f0f2f5;
+}
+.fb-0{
+    margin-top: 100px;
+    
+}
+.fb-1{
+    display: block;
+    float: left;
+    margin-left: 200px;
+}
+.fb-2{
+    background-color: white;
+    width: 400px;
+    height: 370px;
+    float: right;
+    margin-right: 200px;
+    border-radius: 8px;
+}
+input{
+    margin: 20px 20px 0px 20px;
+    width: 90%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 1px solid #dddfe2;
+    color: #dddfe2;
+    
+}
+.fb-3{
+    margin: 10px 20px 5px 20px;
+    width: 90%;
+    height: 100%;
+    background-color: #1877f2;
+    font-size: 18px;
+    padding: 15px;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #dddfe2;
+    font-weight: 700;
+}
+.a-1{
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+hr{
+    margin: 0 20px 0 20px;
+}
+.fb-4{
+    margin: 20px 90px 20px 80px;
+    width: 60%;
+    padding: 15px 5px 15px 5px;
+    background-color: rgb(36, 187, 48);
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #dddfe2;
+}
+.a-2{
+    color: white;
+}
+b{
+  margin-top: 30px;
+}
+.fb-5{
+   margin-top: 20px;
+}
+.a-3{
+    color: black;
+    font-weight: bold;
+}
