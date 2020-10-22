@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+.navbar{
+    width: 100%;
+    height: 41px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+.menu-left{
+    display: flex;
+    position: relative;
+    float: left;
+}
+.menu-1{
+    font-size: 35px;
+    height: 100%;
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+.dropdown {
+    /* position: absolute; */
+    display: inline-block;
+}
+.dropdown:hover .menu-3 {
+    display: block;
+    
+}
+.menu-2:hover, .dropdown:hover .menu-2 {
+    background-color: silver;
+}
+.menu-2{
+    font-size: 35px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    background-color: black;
+}
+.menu-3{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+.aa:hover{
+    background-color: gray;
+}
+.menu-3 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.menu-right{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding-left:0px;
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 20px;
+}
+.menu-1:hover{
+    background-color: silver;
+}
+.icon-up{
+    font-size: 40px;
+    color: #464646;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.section{
+    margin: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+.tieude{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.main{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap row;
+    padding-bottom: 30px;
+}
+.main-1{
+    margin: auto;
+    padding: 20px 0 10px 0;
+    width: 70%;
+    font-size: 20px ;
+}
+hr{
+    width: 70%;
+    margin: auto;
+}
+.mathang{
+    margin: 1.6%;
+    width: 30%;
+    height: 20%;
+    
+}
+.sanpham{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center; 
+}
+figcaption{
+    margin: 10px;
+}
+p{
+    padding-bottom: 10px;
+}
+.anh-1{
+    width: 100%;
+    height: 80%;
+    
+}
+.search{
+    float: right;
+}
+.pagination{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.pagination a{
+    color: black;
+    text-decoration: none;
+    transition: backgrou-color .3s;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.pagination a.active{
+    background-color: dodgerblue;
+    color: white;
+}
+.pagination a:hover:not(.active){
+    background-color: #ddd;
+}
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: #f0f2f5;
+}
+.footer-1{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    width: 100%;
+    height: 50%;
+    padding:0px 10px 20px 10px;
+}
+
+.ct{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 25%;
+    text-align: left;
+    float: left;
+    padding-right: 20px;
+}
+.li-1{
+    padding: 5px 0 5px 0;
+    text-transform: capitalize;
+    color: grey;
+}
+h5{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+ul{
+    padding-inline-start: 0;
+}
+.a-1{
+    text-decoration: none;
+    color: rgb(92, 88, 88);
+}
+.ketnoi a{
+    text-decoration: none;
+}
+.fab{
+    font-size: 40px;
+    padding: 10px;
+    color: black;
+}
+.fab:hover{
+    background-color: white;
+}
+.fa-facebook-messenger{
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    color: blue;
+}
+.a-2{
+    margin-right: 20px;
+    padding-top: 10px;
+    color: gray;
+}
