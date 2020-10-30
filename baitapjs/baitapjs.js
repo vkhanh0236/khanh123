@@ -11,5 +11,11 @@ function catChuoi(str){
     return (`chuỗi cắt được là : ${str.substring(0,10)}...`);
 }
 function chuHoa(text){
-    return (`${(text.substring(0,1)).toUpperCase()}${(text.substring(1)).toLowerCase()}`)
+    text=text.split(" ");
+
+    for (var i=0,x=text.length;i<x;i++){
+        text[i]=text[i][0].toUpperCase() + text[i].substring(1).toLowerCase();
+    }
+    return text.join(" ");
 }
+// (`${(text.substring(0,1)).toUpperCase()}${(text.substring(1)).toLowerCase()}`)
