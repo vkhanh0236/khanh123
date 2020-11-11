@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style >
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1, h3 {
+            margin: 10px;
+        }
+        input {
+            margin-left: 10px;
+            margin-bottom: 5px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid rgb(212, 221, 225);
+            color: black;
+        }
+        button {
+            height: 36px;
+            border-radius: 5px;
+            border: 1px solid rgb(212, 221, 225);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Currentcy Converter VND</h1>
+    <h3>Select input Converter</h3>
+    <form action="" method="POST">
+        <input type="radio" name="money" id="usd" checked> USD
+        <br>
+        <input type="radio" name="money" id="eur">  EUR
+        <br>
+        <input type="text" name="values" id="values">
+        <button type="button" onclick="convert()"> Convert Currency</button>
+    </form>
+    <script>
+        function convert() {
+        let num = (document.getElementById("values").value);
+        let dola = num * 23000;
+        let euro = num *32000;
+        if (isNaN(num) == true || num<0) {
+            alert('Phải nhập số nguyên dương')
+            return;
+        }
+            if (isNaN(num) == true) {
+            alert("Phải nhập số nguyên dương");
+            return;
+            }
+            if ( document.getElementById("usd").checked == true ) {
+                alert(` ${num} USD là ${dola} vnd `); 
+            }
+            if (document.getElementById("eur").checked == true) {
+                alert(` ${num} EUR là ${euro} vnd `);
+            }
+            
+        }
+    </script>
+</body>
+
+</html>
