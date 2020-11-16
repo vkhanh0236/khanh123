@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="aa" class="ba">freeCodeCamp là một “tượng đài” với dân lập trình và người mê code nói chung, là “học viện code trực tuyến” miễn phí nổi tiếng nhất trong cộng đồng developer nhiều năm qua. Tuy nhiên, không ít bạn trẻ Việt Nam mới vào nghề có thể chưa hiểu rõ về nó cũng như cần một guideline hướng dẫn cụ thể hơn để tận dụng triệt để nền tảng này cho mục tiêu lập trình dài hạn của mình.</p>
+    <p id="ab" class="bb">freeCodeCamp chính thức gia trình làng giới code vào năm 2014, với mục tiêu của họ là “giúp mọi người đều biết viết code” hoàn toàn miễn phí. Cách thức để phục vụ cho mục tiêu này đó là thông qua các bài giảng theo chương trình học cụ thể, video hướng dẫn, article bài blog và các nhóm cùng học tập trên khắp thế giới.</p>
+    <p id="ac" class="bc">Có rất nhiều chứng chỉ học tập trên freeCodeCamp offer đa dạng các chương trình học tập khác nhau – tình từ thời điểm năm 2014 đã có đến 40,000 “developer” tốt nghiệp từ nền tảng. Và bộ phận không nhỏ đã được recruit vào các công ty “tech khủng” nhất trên thế giới.</p>
+    <script>
+        //bai1:thay đổi màu cho từng đoạn văn
+        function changeColor(){
+            document.getElementById("aa").style.color="blue";
+            document.getElementById("ab").style.color="yellow";
+            document.getElementById("ac").style.color="red";
+        }
+        //bai2: thay đổi backgroud cho trang
+        function changeBgColor(color){
+            document.body.style.backgroundColor=color;
+            
+        }
+        //bai3:thay đổi nội dung của đoạn văn 1 giống đoạn văn 2
+        function copyContent(aa,ab){
+            document.getElementById("aa").innerText=ab.innerText;
+        }
+        //bai4:thay đổi kích thước font chữ của 3 đoạn văn thành x pixels
+        function changeFontSize(x){
+            document.getElementById("aa").style.fontSize=x+"px"
+            document.getElementById("ab").style.fontSize=x+"px"
+            document.getElementById("ac").style.fontSize=x+"px"
+        }
+    </script>
+</body>
+</html>
