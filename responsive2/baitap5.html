@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            height: 50px;
+            background-color: turquoise;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .block  {
+            background-color: blue;
+            width: 90px;
+            height: 30px;
+            margin: 10px 15px 10px 15px;
+        }
+        
+        .container1{
+            width: calc(100% - 30px);
+            margin: 15px 15px 0 15px;
+            height: 600px;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 15px;
+        }
+        .block3{
+            background-color: blue;
+            height: 400px;
+        }
+        @media (max-width: 700px){
+            .container{
+                justify-content: center;
+            }
+            .block {
+                width: 60px;
+            }
+            .container1{
+                grid-template-rows: auto auto;
+                grid-template-columns: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block">
+            
+        </div>
+    </div>
+    <div class="container1">
+        <div class="block3"></div>
+        <div class="block3"></div>
+    </div>
+</body>
+</html>
