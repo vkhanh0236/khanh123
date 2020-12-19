@@ -1,12 +1,15 @@
 //bai1 
 function tinhTong(a, b) {
   let sum = 0;
-  
-  for (let i = a + 1; i < b; i++) {
-    sum += i;
+  if(a < b){
+    for (let i = a + 1; i < b; i++) {
+      sum += i;
+    }return sum;
+  }else{
+    for (let i = b + 1; i < a ; i++){
+      sum += i
+    }return sum;
   }
-
-  return sum;
 
 }
 
@@ -27,7 +30,7 @@ function tinhTong2(number) {
 //bai3
 function songuyenTo(number) {
 
-  if (number == 4) {
+  if (number == 4 || number == 1) {
     return false;
   }
 
@@ -71,7 +74,7 @@ function chuHoa(str) {
 
 function stringlower(str) {
 
-  str = str.substring(0).toLowerCase();
+  str = str.toLowerCase();
   str = str.replace(/ /g, "-");
 
   return str;
