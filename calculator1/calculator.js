@@ -28,7 +28,7 @@ $('.clean').on('click', function(){
 // khi bấm DEL sẽ xóa 1 giá trị ở cuối 
 $('.undo').on('click' , function(){
     result = $('#result').text();
-    $('#result').text(result.substring(0, result.length - 1 ));
+    $('#result').text(result.substring(0, result.length - 1 )); // xóa 1 giá trị cuối chuỗi 
 })
 
 // tính bình phương 
@@ -56,13 +56,13 @@ $('.giaithua').on('click' , function(){
 // tính phần trăm
 $('.percent').on('click',function(){
     result = $('#result').text() ; 
-    $('#result').text(result / 100)
+    $('#result').text(result / 100) 
 })
 
 // thay doi theme 
 $(function(){
     $('#changer').on('click',function(){
-        $('.btn').toggleClass('btn1')
-        $('html').toggleClass('html1')
+        $('.btn').toggleClass('btn1') // chèn thêm css "btn" khi click 1 lần ,click lần 2 về ban đầu
+        $('html').toggleClass('html1') // chèn thêm css "html1" khi click 1 lần ,click lần 2 về ban đầu
     })
 })
