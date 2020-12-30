@@ -62,73 +62,75 @@
   </div>
 
   <script>
-    // lấy thông tin từ sever về bảng 
-    $.ajax({
-      method: "GET",
-      url: "http://localhost:3000/users"
+
+    const edit = "edit-student-"
+    $(() => {
+      renderStudent();
     })
-      .done(function (data) {
-        let student = '';
 
-        for (let i = 0; i < data.length; i++) {
-          student += `<tr>
-                            <th scope="row" id="name">${data[i].name}</th>
-                        <td id="dob">${data[i].birthday}</td>
-                        <td id="email">${data[i].email}</td>
-                        <td id="phone">${data[i].phone}</td>
+    // lấy thông tin từ sever về bảng
+    function renderStudent() {
+      $.ajax({
+        method: "GET",
+        url: "http://test-student-tech.herokuapp.com/users"
+      })
+        .done(function (data) {
+          let student = '';
+
+          for (let i = 0; i < data.length; i++) {
+            student += `<tr>
+                        <th scope="row" id="name${data[i].id}" contenteditable>${data[i].name}</th>
+                        <td id="dob${data[i].id}" contenteditable >${data[i].birthday}</td>
+                        <td id="email${data[i].id}" contenteditable>${data[i].email}</td>
+                        <td id="phone${data[i].id}" contenteditable>${data[i].phone}</td>
                         <td>
-                            <a href="" id="edit"><i class="fas fa-edit"></i>Chỉnh sửa</a> | 
-                            <a href="" id="deleteO"><i class="fas fa-trash-alt"></i>Xóa </a>
+                            <a href=""  onclick="updateStudent(${data[i].id})" "><i class="fas fa-edit"></i>Chỉnh sửa</a> | 
+                            <a href="" id="delete" onclick="deleteStudent(${data[i].id})"><i class="fas fa-trash-alt"></i>Xóa </a>
                         </td>
-                          </tr> `;
-          $('#deleteO').click(function () {
-            $.ajax({
+                      </tr> `;
+
+          }
+
+          $('.student').html(student);
+
+        });
+    }
+
+    // chỉnh sửa thông tin học viên
+    function updateStudent(id) {
+      var r = confirm("Bạn có muốn lưu thông tin đã chỉnh sửa không?");
+      if (r == true) {
+        $.ajax({
+          method: "PUT",
+          url: `http://test-student-tech.herokuapp.com/users/${id}`,
+          data: {
+            name: $(`#name${id}`).text(),
+            birthday: $(`#dob${id}`).text(),
+            email: $(`#email${id}`).text(),
+            phone: $(`#phone${id}`).text(),
+          }
+        })
+      } else {
+        location.reload();
+      }
+
+    }
+
+    //xóa học viên
+    function deleteStudent(id) {
+      var r = confirm("Bạn có muốn xóa học viên " + $(`#name${id}`).text() + " không?");
+      if (r == true) {
+        $.ajax({
               method: "DELETE",
-              url: `http://localhost:3000/users + ${data[i].id}`
+              url: `http://test-student-tech.herokuapp.com/users/${id}`
             })
-          });
-        }
+      } else {
+        location.reload()
+      }
 
-        $('.student').html(student);
-      });
-    // chỉnh sửa thông tin người dùng
-    // $('#save').click(function () {
-    //   $.ajax({
-    //     method: "PUT",
-    //     url: "http://localhost:3000/users",
-    //     data: {
-    //       name: $('#name').val() ,
-    //       birthday: $('#dob').val() , 
-    //       email: $('#email').val() ,
-    //       phone: $('#phone').val()
-
-    //     }
-    //   }) ;
-    // }) ;
-
-
-
-    // function idss() {
-    //           $.ajax({
-    //             mehod: "GET",
-    //             url: "http://localhost:3000/users"
-    //           })
-    //             .done(function (data) {
-    //               let student = ""
-    //               for (let i = 0; i < data.length; i++) {
-    //                 student += `http://localhost/users/${data[i].id}<br>`
-    //               }
-    //               $('.student').html(student)
-    //             })
-    //         }
-
-
-
-    //xóa người dùng
-
-
-
-
+          
+    };
+    
   </script>
 
   <!-- bootstrap -->
