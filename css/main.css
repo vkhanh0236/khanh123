@@ -9,9 +9,17 @@ p{
 html{
     font-size: 16px;
 }
-
+/* .container{
+    padding: 0;
+    margin: 0 5rem;
+} */
 .container-fluid{
     padding: 0 5rem;
+}
+
+.btn{
+    border: solid 2px transparent;
+    border-radius: inherit;
 }
 
 /* css header */
@@ -28,10 +36,10 @@ header{
 .header-navbar-search{
     margin: 16px 24px;
     max-height: 3rem;
-    max-width: 32.5rem;
     display: flex;
     border-radius: 8px;
     background-color: #fff;
+    width: 100%;
 }
 
 .header-navbar-search>input{
@@ -63,7 +71,7 @@ header{
     padding: 0;
 }
 .header-navbar-button>button>img{
-    padding: 8px 0px 8px 4px;
+    padding: 8px;
 }
 .header-navbar-button>button>p{
     font-size: 1rem;
@@ -82,13 +90,10 @@ header{
 
 /* css main */
 main{
-    max-width: 80rem;
-    margin: 24px auto;
+    margin: 24px 5rem;
 }
 /* css product */
 .product{
-    
-    height: 35.25rem;
     width: 100%;
     margin: auto;
 }
@@ -101,9 +106,8 @@ main{
 }
 
 .product-name{
-    width: 19rem;
     height: 100%;
-    background-color: #ff1493;
+    background-color: #ff9ed3;
 }
 
 .product-N{
@@ -131,40 +135,34 @@ main{
 .product-item-addtocart{
     width: 100%;
     height: 2.875rem;
-    background-color: #61fd71;
-    color: #000;
-    outline: none;
-    border: none;
+    color: #f2678e;
+    border-color: #f2678e;
     margin: auto;
-}
-.product-item-addtocart>p{
     font-size: 1.25rem;
 }
+
 /* css button more */
-.product-item-moreA{
-    max-width: 80rem;
+.product-moreA{
+    
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.product-item-more{
-    margin: 20px 0;
-    background-color: #ff6cbc;
-    height: 3.75rem;
-    width: 12rem;
-    outline: none;
-    border: none;
-    color: #fff;
+
+
+.btn-more{
+    border-color: #ff6cbc;
+    padding: 1rem 3.5rem;
 }
+
 /* css footer */
 footer{
-    height: 22.75rem;
     padding: 0 80px;
     background-color: #6d6d6d;
 }
-.footer-content{
+/* .footer-content{
     max-height: 18.25rem;
-}
+} */
 .footer-title{
     color: #d4d4d4;
     font-size: 1.25rem;
@@ -182,6 +180,7 @@ footer{
 }
 .footer-content-company{
     color: #fff;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -194,4 +193,19 @@ footer{
 .header-navbar-button>button:hover{
     cursor: pointer;
     background-color: #ffcaca;
+}
+.btn-more:hover{
+    color: white;
+    background-color: #ff6cbc;
+}
+.product-item:hover{
+    box-shadow: 0 0 10px 0 hsl(0deg 0% 60% / 60%);
+
+}
+.product-item-addtocart:hover{
+    color: white;
+    background-color: #f2678e;
+}
+footer>div>a:hover{
+    color: #ff6cbc;
 }
