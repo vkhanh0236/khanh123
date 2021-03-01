@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shopping</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="library/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <!-- css chung -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- css riêng -->
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <div >
+        <!-- header  -->
+    <header class="container-fluid">
+        <div class="d-flex header-navbar">
+            <!-- logo -->
+            <div class="header-navbar-logo d-flex justify-content-center align-items-center">
+                <a href="index.html"><img src="image/logo.png" alt="anh logo"></a>
+            </div>
+            <!-- search -->
+            <div class="header-navbar-search">
+                <input type="text" placeholder="Nhập tên sản phẩm cần tìm ... ">
+                <img src="image/MagnifyingGlass.png" alt="">
+            </div>
+            <!-- button giỏ hàng  -->
+            <div class="header-navbar-button">
+                <button>
+                    <img src="image/ShoppingCart.png" alt="ShoppingCart">
+                    
+                </button>
+            </div>
+            <!-- button đăng nhập -->
+            <div class="header-navbar-button">
+                <button>
+                    <img src="image/UserCircle.png" alt="UserCircle">
+                    
+                </button>
+            </div>
+            <!-- button địa điểm  -->
+            <!-- <div class="header-navbar-button">
+                <button class="header-navbar-button-map">
+                    <img src="image/MapPinLine.png" alt="MapPinLine">
+                    <p>Địa điểm giao hàng</p>
+                </button>
+            </div> -->
+        </div>
+
+    </header>
+
+    <!-- navbar -->
+    <nav>
+        <div class="d-flex">
+            <img class="anh" src="image/List.png" alt="menu">
+            <p class="d-flex justify-content-center align-items-center ">Danh mục sản phẩm</p>
+        </div>
+    </nav>
+
+    <!-- section -->
+    <section>
+        <!-- carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/carosel-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/carosel-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/carosel-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- main -->
+    <main>
+        <div class="row row-cols-4 product">
+            <div class="col-12 product-nameA">
+                <div class="product-name">
+                    <h1 class="product-N">
+                        Đồ ăn vặt - bánh - kẹo
+                    </h1>
+                </div>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item1.png" alt="item1">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item2.png" alt="item2">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item3.png" alt="item3">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item me-0">
+                <img class="product-item-image" src="image/item-index/item4.png" alt="item4">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col-12 product-moreA ">
+                <a href="#" class="btn btn-more text-uppercase  ">xem thêm</a>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row row-cols-4 product">
+            <div class="col-12 product-nameA">
+                <div class="product-name">
+                    <h1 class="product-N">
+                        Đồ ăn vặt - bánh - kẹo
+                    </h1>
+                </div>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item1.png" alt="item1">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item2.png" alt="item2">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item3.png" alt="item3">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item me-0">
+                <img class="product-item-image" src="image/item-index/item4.png" alt="item4">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col-12 product-moreA ">
+                <a href="#" class="btn btn-more text-uppercase ">xem thêm</a>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row row-cols-4 product">
+            <div class="col-12 product-nameA">
+                <div class="product-name">
+                    <h1 class="product-N">
+                        Đồ ăn vặt - bánh - kẹo
+                    </h1>
+                </div>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item1.png" alt="item1">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item2.png" alt="item2">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item3.png" alt="item3">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item me-0">
+                <img class="product-item-image" src="image/item-index/item4.png" alt="item4">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col-12 product-moreA ">
+                <a href="#" class="btn btn-more text-uppercase ">xem thêm</a>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row row-cols-4 product">
+            <div class="col-12 product-nameA">
+                <div class="product-name">
+                    <h1 class="product-N">
+                        Đồ ăn vặt - bánh - kẹo
+                    </h1>
+                </div>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item1.png" alt="item1">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item2.png" alt="item2">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item">
+                <img class="product-item-image" src="image/item-index/item3.png" alt="item3">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col product-item me-0">
+                <img class="product-item-image" src="image/item-index/item4.png" alt="item4">
+                <p class="product-item-name">Bimbim o'sta vi kim chi</p>
+                <span class="product-item-sale fw-bold">6131361313đ</span>
+                <br>
+                <span class="product-item-price text-decoration-line-through">6131đđ</span>
+                <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+            </div>
+            <div class="col-12 product-moreA ">
+                <a href="#" class="btn btn-more text-uppercase ">xem thêm</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="row me-0">
+        <div class="col-4 p-0 footer-content ">
+            <h6 class="footer-title">Về chúng tôi</h6>
+            <br/>
+            <a class="footer-link" href="#">Giới thiệu</a>
+            <br/>
+            <a class="footer-link" href="#">Quản lý chất lượng</a>
+            <br/>
+            <a class="footer-link" href="#">Chính sách bảo mật và quyền riêng tư</a>
+            <br/>
+            <a class="footer-link" href="#">Điều khoản và điều kiện giao dịch</a>
+            <br/>
+            <img class="footer-image" src="image/bocongthuong.png" alt="bocongthuong">
+        </div>
+        <div class="col-4 p-0 footer-content">
+            <h6 class="footer-title">Hỗ trợ khách hàng</h6>
+            <br/>
+            <a class="footer-link" href="#">Trung tâm hỗ trợ khách hàng</a>
+            <br/>
+            <a class="footer-link" href="#">Chính sách thanh toán</a>
+            <br/>
+            <a class="footer-link" href="#">Chính sách giao hàng</a>
+            <br/>
+            <a class="footer-link" href="#">Chính sách đổi trả</a>
+            <br/>
+            <a class="footer-link" href="#">Chính sách chiết khấu và ưu đãi</a>
+        </div>
+        <div class="col-4 p-0 footer-content">
+            <h6 class="footer-title">Chăm sóc khách hàng</h6>
+            <br/>
+            <a class="footer-link" href="#">Mua online: 0332154486</a>
+            <br/>
+            <a class="footer-link" href="#">Email : vkhanh0236@gmail.com</a>
+        </div>
+        <hr />
+        <div class="col-12 footer-content-company d-flex justify-content-center align-items-center">
+            <p>Công Ty Cổ Phần Thương Mại dịch vụ vkhanh ,GPDKKD do sở kế hoạch cấp ngày 11/4/2020.Địa chỉ : Hà Nội</p>
+        </div>
+    </footer>
+    </div>
+    
+
+
+
+    <!-- js bootstrap -->
+    <script src="library/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
