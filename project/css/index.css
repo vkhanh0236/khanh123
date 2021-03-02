@@ -1,32 +1,3 @@
 
-/* css nav */
-nav{
-    margin: 0 5rem;
-    height: 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    background-color: #ff9ed3;
-}
 
- nav>div>img{
-    padding: 0.5rem;
-}
-
-nav>div>p{
-    font-size: 1.5rem;
-    margin-bottom: auto;
-    color: #fff;
-    width: 14rem;
-}
-/* css carosel */
-.carousel{
-    max-width: 80rem;
-    margin: 0 5rem;
-}
-
-.carousel-item>img{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
 

@@ -13,8 +13,9 @@ html{
     padding: 0;
     margin: 0 5rem;
 } */
-.container-fluid{
-    padding: 0 5rem;
+.container{
+    width: 1280px;
+    padding: 0;
 }
 
 .btn{
@@ -24,17 +25,42 @@ html{
 
 /* css header */
 header{
-    background-color: #ff6cbc;
+    background-color: #ed71a3;
+    width: 100%;
 }
 
 .header-navbar{
     max-height: 5rem;
 }
+
+.menu-icon-image{
+    width: 32px;
+}
+.dropdown{
+    margin: auto 0;
+    display: none;
+}
+.dropdown-menu>p{
+    font-size: 1.5rem;
+    color: #ed71a3;
+}
+.dropdown-menu{
+    border-color: #ed71a3;
+}
+
+.dropdown-text{
+    text-decoration: none;
+    color: #ed71a3;
+    background-color: transparent;
+    font-size: 1.5rem;
+    display: block;
+}
+
 .header-navbar-logo>a>img{
-    width: 100%;
+    width: 302px;
 }
 .header-navbar-search{
-    margin: 16px 24px;
+    margin: 1rem 0 1rem 1.5rem ;
     max-height: 3rem;
     display: flex;
     border-radius: 8px;
@@ -55,24 +81,21 @@ header{
 .header-navbar-search>img{
     font-size: 2rem;
     padding: 0.5rem 1rem;
-    color: #909090;
+    
 }
 
-.header-navbar-button{
-    max-height: 3rem;
-}
+
 .header-navbar-button>button{
-    margin: 16px 24px 16px 0;
+    margin: 1.5rem 0 1.5rem 1.5rem;
     max-width: 5.3rem;
     display: flex;
+    background-color: transparent;
     border-radius: 50px;
     outline: none;
     border: none;
     padding: 0;
 }
-.header-navbar-button>button>img{
-    padding: 8px;
-}
+
 .header-navbar-button>button>p{
     font-size: 1rem;
     margin-left: -8px;
@@ -90,8 +113,58 @@ header{
 
 /* css main */
 main{
-    margin: 24px 5rem;
+    display: block;
+    margin-bottom: 1.5rem;
 }
+
+/* css menu */
+.menu{
+    border:solid 2px #ed71a3;
+    float: left;
+    width: 18.875rem;
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+ .menu>div>a>img{
+    padding: 0.5rem;
+}
+
+.menu>div>p{
+    font-size: 1.5rem;
+    margin-bottom: auto;
+    color: #fff;
+    background-color: #ed71a3;
+    width: 100%;
+    text-decoration: none;
+}
+.menu-list > li {
+    list-style-type: none;
+    border-bottom: 1px solid #ffebf7;
+}
+.menu-list > li > a{
+    text-decoration: none;
+    color: #ed71a3;
+    display: block;
+    font-size: 1.5rem;
+}
+
+/* css carousel */
+.carousel{
+    width: calc(100% - 302px);
+    float: right;
+    padding-left:1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-item>img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 /* css product */
 .product{
     width: 100%;
@@ -103,11 +176,12 @@ main{
 
 .product-nameA{
     height: 4rem;
+    
 }
 
 .product-name{
     height: 100%;
-    background-color: #ff9ed3;
+    background-color: #ed71a3;
 }
 
 .product-N{
@@ -116,10 +190,8 @@ main{
     color: #fff;
 }
 
-.col{
-    height: 25rem;
-    width: 18.875rem;
-    margin-right: 1.5rem;
+.product-banner > img{
+    width: 100%;
 }
 
 .product-item{
@@ -131,19 +203,27 @@ main{
     color: #5a5a5a;
     font-style: normal;
 }
-
+.product-item-sale{
+    color: #ca3672;
+}
+.product-item-price{
+    color: #5a5a5a;
+}
 .product-item-addtocart{
     width: 100%;
     height: 2.875rem;
-    color: #f2678e;
-    border-color: #f2678e;
+    color: #ed71a3;
+    border-color: #ed71a3;
     margin: auto;
     font-size: 1.25rem;
+}
+.product-item-image{
+    width: 100%;
 }
 
 /* css button more */
 .product-moreA{
-    
+    margin-top: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -151,9 +231,18 @@ main{
 
 
 .btn-more{
-    border-color: #ff6cbc;
+    border-color: #ed71a3;
     padding: 1rem 3.5rem;
 }
+
+/* css banner */
+.banner{
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.banner > img{
+    width: 100%;
+} 
 
 /* css footer */
 footer{
@@ -186,26 +275,121 @@ footer{
 
 /* hover */
 .header-navbar-search>img:hover{
-    background-color: #ffcaca;
+    background-color: #ed71a3;
     cursor: pointer;
 }
-
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-item:hover{
+    background-color: #ed71a3;
+}
+.dropdown-text:hover{
+    background-color: #ed71a3;
+    color: #fff;
+}
 .header-navbar-button>button:hover{
     cursor: pointer;
-    background-color: #ffcaca;
+    background-color: #ed71a3;
 }
 .btn-more:hover{
     color: white;
-    background-color: #ff6cbc;
+    background-color: #ed71a3;
 }
 .product-item:hover{
     box-shadow: 0 0 10px 0 hsl(0deg 0% 60% / 60%);
-
+    border-radius: 8px;
+    transition-duration: 0.5s;
 }
 .product-item-addtocart:hover{
     color: white;
-    background-color: #f2678e;
+    background-color: #ed71a3;
 }
 footer>div>a:hover{
-    color: #ff6cbc;
+    color: #ed71a3;
 }
+
+.menu-list > li > a:hover{
+    color: #fff;
+    background-color: #ed71a3;
+}
+.menu-icon-product:hover .menu-icon-list{
+    display: block;
+}
+
+
+/* responsive */
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px ) {
+    html{
+        font-size: 12px;
+    }
+    .header-navbar-logo{
+        display: none;
+    } 
+    .container{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .carousel{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+    .product>div:nth-child(n + 7){
+        display: none;
+    }
+ }
+
+/*  Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+    .header-navbar-logo{
+        display: none;
+    } 
+    .container{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .carousel{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+ }
+
+/*  Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .header-navbar-logo{
+        display: none;
+    } 
+    .container{
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .carousel{
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+ }
+
+/*  Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+
+ }
