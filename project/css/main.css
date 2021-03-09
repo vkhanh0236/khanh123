@@ -41,14 +41,22 @@ header{
     margin: auto 0;
     display: none;
 }
-.dropdown-menu>p{
-    font-size: 1.5rem;
+.dropdown-menu>li>p{
+    padding: .25rem 1rem;
     color: #ed71a3;
+    background-color: transparent;
+    font-size: 1.5rem;
+    display: block;
+    border-bottom: #ed71a3 1px solid;
+    cursor: default;
 }
 .dropdown-menu{
     border-color: #ed71a3;
+    padding: 0;
 }
-
+.dropdown-menu > li > a{
+    text-decoration: none;
+}
 
 .dropdown-text{
     text-decoration: none;
@@ -81,10 +89,12 @@ header{
     outline: none;
 }
 
-.header-navbar-search>img{
+.search-icon>img{
     font-size: 2rem;
     padding: 0.5rem 1rem;
-    
+}
+.search-hover{
+    display: none;
 }
 
 .header-navbar-button{
@@ -102,7 +112,9 @@ header{
     border: none;
     padding: 0;
 }
-
+.button-hover{
+    display: none;
+}
 .header-navbar-button>button>p{
     font-size: 1rem;
     margin-left: -8px;
@@ -145,6 +157,9 @@ main{
     width: 100%;
     text-decoration: none;
 }
+.menu-list{
+    margin-bottom: 0;
+}
 .menu-list > li {
     list-style-type: none;
     border-bottom: 1px solid #ffebf7;
@@ -154,6 +169,9 @@ main{
     color: #ed71a3;
     display: block;
     font-size: 1.5rem;
+}
+.menu-product > p > img{
+    margin-bottom: 5px;
 }
 
 /* css carousel */
@@ -183,12 +201,13 @@ main{
 
 .product-nameA{
     height: 4rem;
-    
+    margin-bottom: 1rem;
 }
 
 .product-name{
     height: 100%;
     background-color: #ed71a3;
+    
 }
 
 .product-N{
@@ -201,12 +220,14 @@ main{
 
 .product-item{
     padding: 1.5rem;
+    margin-bottom: 1rem;
 }
 .product-item-name{
     min-height: 3rem;
     font-size: 1.125rem;
     color: #5a5a5a;
     font-style: normal;
+    
 }
 .product-item-sale{
     color: #ca3672;
@@ -228,7 +249,7 @@ main{
 
 /* css button more */
 .product-moreA{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,7 +293,7 @@ footer{
 .footer-image{
     margin-top: 1.5rem;
     width: 13.5rem;
-    height: 5rem;
+    
 }
 .footer-content{
     padding-left: 0;
@@ -281,14 +302,45 @@ footer{
     color: #fff;
     margin-bottom: 1.5rem;
 }
+/* css breadcrumb */
+.breadcrumb{
+    clear: both;
+}
+.breadcrumb-item > a {
+    text-decoration: none;
+    color: #000;
+}
+.breadcrumb-item.active{
+    color: #ed71a3;
+}
 
+/* css icon up */
+.fa-arrow-circle-up{
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    color: #ed71a3;
+}
 
 
 /* hover */
-.header-navbar-search>img:hover{
+.search-icon:hover .search-default{
+    display: none;
+}
+.search-icon:hover .search-hover{
+    display: block;
+    cursor: pointer;
+}
+.navbar-button:hover .button-default{
+    display: none;
+}
+.navbar-button:hover .button-hover{
+    display: block;
     background-color: #ed71a3;
     cursor: pointer;
 }
+
 .menu-icon:hover{
     background-color: transparent;
     border-color: transparent;
@@ -313,7 +365,8 @@ footer{
     border-radius: 8px;
     transition-duration: 0.5s;
 }
-.product-item-addtocart:hover{
+
+.product-item:hover .product-item-addtocart{
     color: white;
     background-color: #ed71a3;
 }
@@ -327,6 +380,9 @@ footer{
 }
 .menu-icon-product:hover .menu-icon-list{
     display: block;
+}
+.breadcrumb-item > a:hover {
+    color: #ed71a3;
 }
 
 /* focus */
@@ -344,8 +400,13 @@ footer{
     .header-navbar-logo{
         display: none;
     } 
+    .search-icon>img{
+        padding: 0;
+    }
     .container{
         width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .menu{
         display: none;
@@ -353,7 +414,7 @@ footer{
     .dropdown{
         display: block;
     }
-    .product-banner > img{
+    .product-banner > a > img{
         width: 100%;
     }
     .carousel{
@@ -389,6 +450,7 @@ footer{
     .header-navbar-logo{
         display: none;
     } 
+
     .container{
         width: 100%;
     }
@@ -416,6 +478,7 @@ footer{
     
     .container{
         width: 100%;
+        
     }
     .menu{
         display: none;
@@ -446,6 +509,9 @@ footer{
     }
     .collapse:not(.show){
         display: block;
+    }
+    .footer-image{
+        width: 15rem;
     }
  }
 

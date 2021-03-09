@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="shortcut icon" href="image/logo-icon.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="library/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <!-- css chung -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- css riêng -->
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header class="header">
+        <div class="d-flex header-navbar container">
+            <!-- dropdown menu -->
+
+            <div class="dropdown">
+                <button class="btn menu-icon " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="image/List.png" alt="menu">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li>
+                        <p>Danh mục sản phẩm</p>
+                    </li>
+                    <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ ăn vặt -
+                                bánh - kẹo</button></a></li>
+                    <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Trái
+                                cây</button></a></li>
+                    <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Thịt -
+                                trứng</button></a></li>
+                    <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ
+                                uống</button></a></li>
+                    <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Rau -
+                                củ</button></a></li>
+                </ul>
+            </div>
+
+
+            <!-- logo -->
+            <div class="header-navbar-logo justify-content-center align-items-center">
+                <a href="index.html"><img src="image/logo.png" alt="anh logo"></a>
+            </div>
+            <!-- search -->
+            <div class="header-navbar-search">
+                <input type="text" placeholder="Nhập tên sản phẩm cần tìm ... ">
+                <div class="search-icon">
+                    <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
+                    <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                </div>
+
+            </div>
+            <!-- button giỏ hàng  -->
+            <div class="header-navbar-button">
+                <button>
+                    <div class="navbar-button">
+                        <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
+                        <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                    </div>
+
+                </button>
+            </div>
+            <!-- button đăng nhập -->
+            <div class="header-navbar-button">
+                <button>
+                    <div class="navbar-button">
+                        <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
+                        <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                    </div>
+
+
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- dropdown menu -->
+    <section class="container">
+        <div class="dropdown dropdown-product ">
+            <button class="btn menu-icon " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <p><img src="image/List.png" alt="menu">Danh mục sản phẩm</p>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ ăn vặt - bánh -
+                            kẹo</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Trái
+                            cây</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Thịt -
+                            trứng</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ
+                            uống</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Rau -
+                            củ</button></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- breadcrumb -->
+    <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+        </ol>
+    </nav>
+
+    <!-- main -->
+    <div class="container row mx-auto ">
+        <div class="col-lg-9 product-section">
+            <h2>Giỏ hàng</h2>
+            <hr>
+            <div class="section-item d-flex">
+                <div class="cart-item-image"><img src="image/item-index/item1.png" alt="item1"></div>
+                <div class="item-name">
+                    <div class="product-name">
+                        <h4>Bimbim o'sta vị kim chi</h4>
+                    </div>
+                    <div class="delete">
+                        <p> <img src="image/Trash.png" alt="trash"> Xóa khỏi giỏ hàng</p>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <p class="price-sale">5.000đ</p>
+                    <div class="price text-decoration-line-through">6.000đ</div>
+                    <div class="order-item d-flex ">
+                        <button class="dec">-</button>
+                        <input class="quantity" value="2"></input>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="item-mobile">
+                    <div class="product-name">
+                        <h4>Bimbim o'sta vị kim chi</h4>
+                    </div>
+
+                    <div class="price-sale">5.000đ</div>
+                    <div class="price text-decoration-line-through">6.000đ</div>
+                    <div class="d-flex">
+                        <div class="order-item d-flex ">
+                            <button class="dec">-</button>
+                            <input class="quantity" type="number"></input>
+                            <button class="inc">+</button>
+                        </div>
+                        <div class="delete">
+                            <p> <img class="trash" src="image/Trash.png" alt="trash"> Xóa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-item d-flex">
+                <div class="cart-item-image"><img src="image/item-index/item5.png" alt="item1"></div>
+                <div class="item-name">
+                    <div class="product-name">
+                        <h4>Táo Ba Lan gala royal</h4>
+                    </div>
+                    <div class="delete">
+                        <p> <img src="image/Trash.png" alt="trash"> Xóa khỏi giỏ hàng</p>
+                    </div>
+                </div>
+                <div class="item-price">
+                    <div class="price-sale">79.000đ</div>
+                    <div class="price text-decoration-line-through">80.000đ</div>
+                    <div class="order-item d-flex ">
+                        <button class="dec">-</button>
+                        <input class="quantity" type="number" value="1"></input>
+                        <button class="inc">+</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="item-mobile">
+                    <div class="product-name">
+                        <h4>Táo Ba Lan gala royal</h4>
+                    </div>
+
+                    <div class="price-sale">79.000đ</div>
+                    <div class="price text-decoration-line-through">80.000đ</div>
+                    <div class="d-flex">
+                        <div class="order-item d-flex ">
+                            <button class="dec">-</button>
+                            <input class="quantity" type="number"></input>
+                            <button class="inc">+</button>
+                        </div>
+                        <div class="delete">
+                            <p> <img class="trash" src="image/Trash.png" alt="trash"> Xóa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-3 price-wrapper">
+            <div class="price-section">
+                <div class="cart-subtotal-block">Tạm tính :<span class="cart-subtotal-price">0đ</span></div>
+                <div class="cart-discount-block">Khuyến mãi + chiết khấu 1% : <span
+                        class="cart-discount-value">-1.000đ</span></div>
+                <div class="cart-coupon-block"></div>
+                <div class="cart-shipping-block">Phí vận chuyển : <span class="cart-shipping-price">10.000đ</span></div>
+                <div class="cart-grandtotal-block">Thành tiền :<span class="cart-grandtotal-price">211.000đ</span></div>
+                <div class="cart-checkout-btn"><a class="btn product-item-pay" href="#">Thanh toán</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="button-section">
+            <a href="index.html"><button class="previous">Tiếp tục mua hàng</button></a>
+            <button class="reset-cart">Xóa giỏ hàng</button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class=" row container footer-property">
+            <div class="col-md-6  col-xl-4  footer-content ">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample1" aria-expanded="false"
+                        aria-controls="collapseExample1">
+                        Về chúng tôi
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                    <a class="footer-link" href="about.html">Giới thiệu</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Quản lý chất lượng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách bảo mật và quyền riêng tư</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Điều khoản và điều kiện giao dịch</a>
+                    <br />
+                </div>
+            </div>
+
+            <div class="col-md-6  col-xl-4  footer-content">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample2">
+                        Hỗ trợ khách hàng
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample2">
+                    <a class="footer-link" href="about.html">Trung tâm hỗ trợ khách hàng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách thanh toán</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách giao hàng</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách đổi trả</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Chính sách chiết khấu và ưu đãi</a>
+                </div>
+
+
+            </div>
+            <div class="col-md-6 col-xl-4  footer-content">
+                <p>
+                    <a class="btn footer-title" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                        aria-expanded="false" aria-controls="collapseExample3">
+                        Chăm sóc khách hàng
+                    </a>
+
+                </p>
+                <div class="collapse" id="collapseExample3">
+                    <a class="footer-link" href="about.html">Mua online: 0332154486</a>
+                    <br />
+                    <a class="footer-link" href="about.html">Email : vkhanh0236@gmail.com</a>
+                </div>
+
+
+            </div>
+            <img class="footer-image" src="image/bocongthuong.png" alt="bocongthuong">
+
+            <hr />
+            <div class="col-12 footer-content-company ">
+                <p class="text-center">Công Ty Cổ Phần Thương Mại dịch vụ vkhanh ,GPDKKD do sở kế hoạch cấp ngày
+                    11/4/2020.Địa chỉ : Hà
+                    Nội
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- icon up -->
+    <div class="icon-up"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
+
+
+    <script src="js/cart.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- js bootstrap -->
+    <script src="library/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
