@@ -63,9 +63,11 @@
     width: 2rem;
     height: 2rem;
     border: solid 1px #909090;
+    background-color: #fff;
 }
 .quantity{
     width: 2rem;
+    text-align: center;
 }
 .product-item-addtocart{
     margin-top: 1.5rem;
@@ -87,7 +89,10 @@
 }
 .information-detail{
     padding: 1.5rem;
-    
+    padding-left: 0;
+}
+.col-lg-7{
+    padding-left: 0;
 }
 .information-box{
     background-color: #fff;

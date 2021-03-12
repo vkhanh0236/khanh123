@@ -14,7 +14,7 @@
     <!-- css chung -->
     <link rel="stylesheet" href="css/main.css">
     <!-- css riêng -->
-    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/pay.css">
 
 </head>
 
@@ -86,44 +86,42 @@
         </div>
 
     </header>
+    <!-- dropdown menu -->
+    <section class="container">
+        <div class="dropdown dropdown-product ">
+            <button class="btn menu-icon " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <p><img src="image/List.png" alt="menu">Danh mục sản phẩm</p>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+
+                </li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ ăn vặt - bánh -
+                            kẹo</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Trái
+                            cây</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Thịt -
+                            trứng</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ
+                            uống</button></a></li>
+                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Rau -
+                            củ</button></a></li>
+            </ul>
+        </div>
+    </section>
+
     <!-- breadcrumb -->
     <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-            <li class="breadcrumb-item"><a href="cart.html">Giỏ hàng</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Xác nhận đơn hàng </li>
+            <li class="breadcrumb-item active" aria-current="page">Về chúng tôi</li>
         </ol>
     </nav>
 
     <!-- main -->
-    <div class="section-pay ">
-        <div class="information">
-            <h6>1. Thông tin người mua hàng :</h6>
-            <input type="radio" id="male" value="male" name="gender" ><label for="male">Nam</label>
-            <input type="radio" id="female" value="female" name="gender"><label for="female">Nữ</label>
-            <br />
-            <input type="text" id="name" placeholder="Họ và tên *" >
-            <br />
-            <input type="text" id="phone" placeholder="Số điện thoại *">
-            <br />
-            <input type="radio" id="others" name="others"><label for="others">Gọi người khác nhận hộ (nếu có)</label>
-        </div>
-        <div class="receiving-address">
-            <h6>2.Địa chỉ nhận hàng</h6>
-            <input type="text" id="address" placeholder="Địa chỉ nhận hàng *">
-            <br />
-            <input type="radio" id="ship" name="ship"><label for="ship">Giao hàng tận cửa chung cư , văn phòng</label>
-        </div>
-        <div class="receiving-time">
-            <h6>3.Thời gian nhận hàng</h6>
-            <input type="date">
-            <input type="time">
-            <br />
-            <input type="text" id="note" placeholder="Ghi chú thêm ">
-        </div>
-        <div class="text-center">
-            <button class="btn-confirm " >XÁC NHẬN ĐƠN HÀNG</button>
-        </div>
+    <div class="section-pay">
+
     </div>
 
 
@@ -138,13 +136,13 @@
                     </a>
                 </p>
                 <div class="collapse" id="collapseExample1">
-                    <a class="footer-link" href="about.html">Giới thiệu</a>
+                    <a class="footer-link" href="#">Giới thiệu</a>
                     <br />
-                    <a class="footer-link" href="about.html">Quản lý chất lượng</a>
+                    <a class="footer-link" href="#">Quản lý chất lượng</a>
                     <br />
-                    <a class="footer-link" href="about.html">Chính sách bảo mật và quyền riêng tư</a>
+                    <a class="footer-link" href="#">Chính sách bảo mật và quyền riêng tư</a>
                     <br />
-                    <a class="footer-link" href="about.html">Điều khoản và điều kiện giao dịch</a>
+                    <a class="footer-link" href="#">Điều khoản và điều kiện giao dịch</a>
                     <br />
                 </div>
             </div>
@@ -158,15 +156,15 @@
 
                 </p>
                 <div class="collapse" id="collapseExample2">
-                    <a class="footer-link" href="about.html">Trung tâm hỗ trợ khách hàng</a>
+                    <a class="footer-link" href="#">Trung tâm hỗ trợ khách hàng</a>
                     <br />
-                    <a class="footer-link" href="about.html">Chính sách thanh toán</a>
+                    <a class="footer-link" href="#">Chính sách thanh toán</a>
                     <br />
-                    <a class="footer-link" href="about.html">Chính sách giao hàng</a>
+                    <a class="footer-link" href="#">Chính sách giao hàng</a>
                     <br />
-                    <a class="footer-link" href="about.html">Chính sách đổi trả</a>
+                    <a class="footer-link" href="#">Chính sách đổi trả</a>
                     <br />
-                    <a class="footer-link" href="about.html">Chính sách chiết khấu và ưu đãi</a>
+                    <a class="footer-link" href="#">Chính sách chiết khấu và ưu đãi</a>
                 </div>
 
 
@@ -180,9 +178,9 @@
 
                 </p>
                 <div class="collapse" id="collapseExample3">
-                    <a class="footer-link" href="about.html">Mua online: 0332154486</a>
+                    <a class="footer-link" href="#">Mua online: 0332154486</a>
                     <br />
-                    <a class="footer-link" href="about.html">Email : vkhanh0236@gmail.com</a>
+                    <a class="footer-link" href="#">Email : vkhanh0236@gmail.com</a>
                 </div>
 
 

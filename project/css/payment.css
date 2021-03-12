@@ -1,0 +1,42 @@
+.breadcrumb{
+    margin-top: 1rem;
+}
+.section-pay{
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ed71a3;
+    margin-bottom: 2rem;
+}
+#male , #female , #others , #ship{
+    margin-right: 5px;
+}
+label{
+    margin-right: 1rem;
+}
+#others , #ship{
+    margin-bottom: 1.5rem;
+}
+#name , #phone , #address , #note{
+    padding: .5rem;
+    margin: .5rem;
+    margin-left: 0;
+    border: solid 1px #e9edf0;
+    width: 100%;
+}
+#name:focus , #phone:focus , #address:focus , #note:focus{
+    outline: #ed71a3 1px solid;
+}
+#note{
+    margin-top: 1rem;
+    width: 100%;
+    padding: .5rem .5rem 2rem .5rem;
+}
+.btn-confirm{
+    margin-top: 1rem;
+    background-color: #ed71a3;
+    padding: .5rem 1rem;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+}
