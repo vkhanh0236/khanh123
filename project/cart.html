@@ -21,7 +21,7 @@
 <body>
 
     <!-- header  -->
-    <header class="header">
+    <header class="header fixed-top">
         <div class="d-flex header-navbar container">
             <!-- dropdown menu -->
 
@@ -50,14 +50,16 @@
 
             <!-- logo -->
             <div class="header-navbar-logo justify-content-center align-items-center">
-                <a href="index.html"><img src="image/logo.png" alt="anh logo"></a>
+                <a href="index.html"><img src="image/logo-white.png" alt="anh logo"></a>
             </div>
             <!-- search -->
             <div class="header-navbar-search">
                 <input type="text" placeholder="Nhập tên sản phẩm cần tìm ... ">
                 <div class="search-icon">
-                    <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
-                    <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                    <a href="product.html">
+                        <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
+                        <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                    </a>
                 </div>
 
             </div>
@@ -65,8 +67,11 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
-                        <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
-                        <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                        <p id="cart-number">2</p>
+                        <a href="cart.html">
+                            <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
+                            <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                        </a>
                     </div>
 
                 </button>
@@ -75,11 +80,11 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
-                        <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
-                        <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                        <a href="#">
+                            <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
+                            <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                        </a>
                     </div>
-
-
                 </button>
             </div>
 
@@ -121,6 +126,7 @@
         <div class="col-lg-9 product-section">
             <h2>Giỏ hàng</h2>
             <hr>
+            <p class=" text-center " id="cart-empty">Giỏ hàng trống</p>
             <div class="section-item d-flex">
                 <div class="cart-item-image"><img src="image/item-index/item1.png" alt="item1"></div>
                 <div class="item-name">
@@ -136,11 +142,11 @@
                     <div class="price text-decoration-line-through">6.000đ</div>
                     <div class="order-item d-flex ">
                         <button class="dec" value="-">-</button>
-                        <input class="quantity"  value="1"></input>
+                        <input class="quantity" value="1"></input>
                         <button class="inc" value="+">+</button>
                     </div>
                 </div>
-                
+
                 <div class="item-mobile">
                     <div class="product-name">
                         <h4>Bimbim o'sta vị kim chi</h4>
@@ -148,15 +154,15 @@
 
                     <div class="price-sale">5.000đ</div>
                     <div class="price text-decoration-line-through">6.000đ</div>
-                    <div class="d-flex">
-                        <div class="order-item d-flex ">
-                            <button class="decm">-</button>
-                            <input class="quantity" value="1"></input>
-                            <button class="incm">+</button>
-                        </div>
-                        <div class="delete">
-                            <p> <img class="trash" src="image/Trash.png" alt="trash"> Xóa</p>
-                        </div>
+
+                    <div class="order-item d-flex ">
+                        <button class="dec">-</button>
+                        <input class="quantity" value="1"></input>
+                        <button class="inc">+</button>
+                    </div>
+
+                    <div class="delete">
+                        <p> <img class="trash" src="image/Trash.png" alt="trash"> Xóa</p>
                     </div>
                 </div>
             </div>
@@ -171,32 +177,33 @@
                         <p> <img src="image/Trash.png" alt="trash"> Xóa khỏi giỏ hàng</p>
                     </div>
                 </div>
+
                 <div class="item-price">
                     <div class="price-sale">79.000đ</div>
                     <div class="price text-decoration-line-through">80.000đ</div>
                     <div class="order-item d-flex ">
                         <button class="dec">-</button>
-                        <input class="quantity"  value="1"></input>
+                        <input class="quantity" value="1"></input>
                         <button class="inc">+</button>
                     </div>
-                    
                 </div>
-                
+
                 <div class="item-mobile">
                     <div class="product-name">
-                        <h4>Táo Ba Lan gala royal</h4>
+                        <h4>Táo Ba Lan gala royal </h4>
                     </div>
+
                     <div class="price-sale">79.000đ</div>
                     <div class="price text-decoration-line-through">80.000đ</div>
                     <div class="d-flex">
                         <div class="order-item d-flex ">
-                            <button class="decm">-</button>
+                            <button class="dec">-</button>
                             <input class="quantity" value="1"></input>
-                            <button class="incm">+</button>
+                            <button class="inc">+</button>
                         </div>
-                        <div class="delete">
-                            <p> <img class="trash" src="image/Trash.png" alt="trash"> Xóa</p>
-                        </div>
+                    </div>
+                    <div class="delete ">
+                        <p> <img class="trash" src="image/Trash.png" alt="trash"> Xóa</p>
                     </div>
                 </div>
             </div>
@@ -204,13 +211,13 @@
         </div>
         <div class="col-lg-3 price-wrapper">
             <div class="price-section">
-                <div class="cart-subtotal-block">Tạm tính :<span class="cart-subtotal-price">84.000đ</span></div>
-                <div class="cart-discount-block">Khuyến mãi + chiết khấu 1% : <span
-                        class="cart-discount-value">-0.840đ</span></div>
+                <div class="cart-subtotal-block">Tạm tính :<span class="cart-subtotal-price"></span></div>
+                <div class="cart-discount-block">Khuyến mãi + chiết khấu 1% : <span class="cart-discount-value"></span>
+                </div>
                 <div class="cart-coupon-block"></div>
-                <div class="cart-shipping-block">Phí vận chuyển : <span class="cart-shipping-price">10.000đ</span></div>
-                <div class="cart-grandtotal-block">Thành tiền :<span class="cart-grandtotal-price">93.160đ</span></div>
-                <div class="cart-checkout-btn"><a class="btn product-item-pay" href="#">Thanh toán</a></div>
+                <div class="cart-shipping-block">Phí vận chuyển : <span class="cart-shipping-price">1.000đ</span></div>
+                <div class="cart-grandtotal-block">Thành tiền :<span class="cart-grandtotal-price"></span></div>
+                <div class="cart-checkout-btn"><a class="btn product-item-pay" href="pay.html">Thanh toán</a></div>
             </div>
         </div>
     </div>
@@ -276,9 +283,9 @@
 
                 </p>
                 <div class="collapse" id="collapseExample3">
-                    <a class="footer-link" href="about.html">Mua online: 0332154486</a>
+                    <a class="footer-link" href="tel:(+84)332-154-486">Mua online: 0332154486</a>
                     <br />
-                    <a class="footer-link" href="about.html">Email : vkhanh0236@gmail.com</a>
+                    <a class="footer-link" href="mailto:vkhanh0236@gmail.com">Email : vkhanh0236@gmail.com</a>
                 </div>
 
 
@@ -297,9 +304,12 @@
 
     </footer>
 
+    <!-- popup -->
+    <div class='modall'></div>
+
     <!-- icon up -->
     <div class="icon-up"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
-    
+
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

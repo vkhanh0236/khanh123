@@ -14,14 +14,14 @@
     <!-- css chung -->
     <link rel="stylesheet" href="css/main.css">
     <!-- css riêng -->
-    <link rel="stylesheet" href="css/pay.css">
+    <link rel="stylesheet" href="css/about.css">
 
 </head>
 
 <body>
 
     <!-- header  -->
-    <header class="header">
+    <header class="header fixed-top">
         <div class="d-flex header-navbar container">
             <!-- dropdown menu -->
 
@@ -50,14 +50,16 @@
 
             <!-- logo -->
             <div class="header-navbar-logo justify-content-center align-items-center">
-                <a href="index.html"><img src="image/logo.png" alt="anh logo"></a>
+                <a href="index.html"><img src="image/logo-white.png" alt="anh logo"></a>
             </div>
             <!-- search -->
             <div class="header-navbar-search">
                 <input type="text" placeholder="Nhập tên sản phẩm cần tìm ... ">
                 <div class="search-icon">
-                    <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
-                    <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                    <a href="product.html">
+                        <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
+                        <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                    </a>
                 </div>
 
             </div>
@@ -65,8 +67,12 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
-                        <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
-                        <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                        <p id="cart-number">0</p>
+                        <a href="cart.html">
+                            <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
+                            <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                        </a>
+
                     </div>
 
                 </button>
@@ -75,41 +81,17 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
-                        <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
-                        <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                        <a href="about.html">
+                            <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
+                            <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                        </a>
                     </div>
-
-
                 </button>
             </div>
 
         </div>
 
     </header>
-    <!-- dropdown menu -->
-    <section class="container">
-        <div class="dropdown dropdown-product ">
-            <button class="btn menu-icon " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <p><img src="image/List.png" alt="menu">Danh mục sản phẩm</p>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li>
-
-                </li>
-                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ ăn vặt - bánh -
-                            kẹo</button></a></li>
-                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Trái
-                            cây</button></a></li>
-                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Thịt -
-                            trứng</button></a></li>
-                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Đồ
-                            uống</button></a></li>
-                <li><a href="product.html"><button class="dropdown-item dropdown-text" type="button">Rau -
-                            củ</button></a></li>
-            </ul>
-        </div>
-    </section>
 
     <!-- breadcrumb -->
     <nav class="container" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -120,8 +102,20 @@
     </nav>
 
     <!-- main -->
-    <div class="section-pay">
-
+    <div class="section-about container">
+        <h1 class="text-center">Giới thiệu về Online Shopping</h1>
+        
+        <p>Online Shopping  mang đến cho người tiêu dùng sự lựa chọn đa dạng về chất lượng hàng hóa và dịch vụ, đáp ứng đầy đủ nhu cầu trải nghiệm mua sắm từ bình dân đến cao cấp của mọi khách hàng.Mua sắm tại Online Shopping, khách hàng không chỉ trải nghiệm thoải mái không gian dịch vụ tiện ích mà còn nhận được nhiều giá trị vượt trội với các hình thức khuyến mãi, ưu đãi hấp dẫn.</p>
+        <img src="image/about.jpg" alt="about">
+        <p>Với sứ mệnh phát triển bền vững và tạo được cho khách hàng tâm lý “AN TÂM MUA SẮM MỖI NGÀY”, Online Shopping luôn nỗ lực đáp ứng đầy đủ yêu cầu mua sắm của khách hàng, cam kết chất lượng khi sử dụng sản phẩm, giao hàng nhanh chóng, nâng cao giá trị cuộc sống của người tiêu dùng trong xã hội hiện đại.</p>
+        <img src="image/about.jpg" alt="about1">
+        <h6>Cam kết với khách hàng </h6>
+        <ul>
+            <li>Cung cấp cho khách hàng những sản phẩm đảm bảo an toàn chất lượng, đa dạng từ thực phẩm...</li>
+            <li>Dịch vụ vượt trội: Mua sắm trực tuyến dễ dàng hoặc tại cửa hàng, thanh toán thông minh nhanh chóng, an toàn bảo mật thông tin…</li>
+            <li>Vận chuyển siêu tốc: Giao hàng trong ngày với hầu hết các mặt hàng.</li>
+        </ul>
+        <p class="text-center fw-bold">XIN CHÂN THÀNH CẢM ƠN</p>
     </div>
 
 
@@ -136,13 +130,13 @@
                     </a>
                 </p>
                 <div class="collapse" id="collapseExample1">
-                    <a class="footer-link" href="#">Giới thiệu</a>
+                    <a class="footer-link" href="about.html">Giới thiệu</a>
                     <br />
-                    <a class="footer-link" href="#">Quản lý chất lượng</a>
+                    <a class="footer-link" href="about.html">Quản lý chất lượng</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách bảo mật và quyền riêng tư</a>
+                    <a class="footer-link" href="about.html">Chính sách bảo mật và quyền riêng tư</a>
                     <br />
-                    <a class="footer-link" href="#">Điều khoản và điều kiện giao dịch</a>
+                    <a class="footer-link" href="about.html">Điều khoản và điều kiện giao dịch</a>
                     <br />
                 </div>
             </div>
@@ -156,15 +150,15 @@
 
                 </p>
                 <div class="collapse" id="collapseExample2">
-                    <a class="footer-link" href="#">Trung tâm hỗ trợ khách hàng</a>
+                    <a class="footer-link" href="about.html">Trung tâm hỗ trợ khách hàng</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách thanh toán</a>
+                    <a class="footer-link" href="about.html">Chính sách thanh toán</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách giao hàng</a>
+                    <a class="footer-link" href="about.html">Chính sách giao hàng</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách đổi trả</a>
+                    <a class="footer-link" href="about.html">Chính sách đổi trả</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách chiết khấu và ưu đãi</a>
+                    <a class="footer-link" href="about.html">Chính sách chiết khấu và ưu đãi</a>
                 </div>
 
 
@@ -178,9 +172,9 @@
 
                 </p>
                 <div class="collapse" id="collapseExample3">
-                    <a class="footer-link" href="#">Mua online: 0332154486</a>
+                    <a class="footer-link" href="tel:(+84)332-154-486">Mua online: 0332154486</a>
                     <br />
-                    <a class="footer-link" href="#">Email : vkhanh0236@gmail.com</a>
+                    <a class="footer-link" href="mailto:vkhanh0236@gmail.com">Email : vkhanh0236@gmail.com</a>
                 </div>
 
 
@@ -199,11 +193,17 @@
 
     </footer>
 
+    <!-- popup -->
+    <div class='modall'></div>
+
     <!-- icon up -->
     <div class="icon-up"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
 
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
+    <!-- js chung -->
+    <script src="js/main.js"></script>
 
     <!-- js bootstrap -->
     <script src="library/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>

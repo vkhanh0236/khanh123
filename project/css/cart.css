@@ -18,6 +18,10 @@
     padding-right: 2rem;
     margin-bottom: 5rem;
 }
+#cart-number{
+    display: block; 
+}
+
 /* css section item */
 .section-item{
     margin: 3rem 0 ;
@@ -30,9 +34,8 @@
     width: 70%;
 }
 .price-sale{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    
 }
 .item-name{
     height: 50%;
@@ -64,6 +67,7 @@
 }
 .quantity{
     width: 2rem;
+    text-align: center;
 }
 .item-mobile{
     display: none;
@@ -78,6 +82,10 @@
     background-color: #ed71a3;
     color: #FFF;
 }
+#cart-empty{
+    display: none;
+}
+
 /* css price wrapper */
 .price-wrapper{
     border: #ed71a3 solid 1px;
@@ -137,15 +145,19 @@
         width: 100%;
         padding-right: 0;
     }
+    .price-sale{
+        font-size: 1.25rem;
+    }
     .item-price , .item-name {
         display: none;
     }
     .item-mobile{
         display: block;
+        width: 50%;
     }
     .delete{
-        margin: 0;
-        margin-left: 2rem;
+        float: right;
+        margin-top: -2rem;
     }
     .cart-item-image{
         width: 40%;
@@ -173,8 +185,8 @@
         display: none;
     }
     .delete{
-        margin: 0;
-        margin-left: 2rem;
+        float: right;
+        margin-top: -2rem;
     }
     .cart-item-image{
         width: 40%;
@@ -184,6 +196,7 @@
     }
     .item-mobile{
         display: block;
+        width: 40%;
     }
     .cart-item-image > img{
         width: 100%;

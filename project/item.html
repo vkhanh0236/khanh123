@@ -21,7 +21,7 @@
 <body>
 
     <!-- header  -->
-    <header class="header">
+    <header class="header fixed-top">
         <div class="d-flex header-navbar container">
             <!-- dropdown menu tab mobile -->
 
@@ -50,14 +50,16 @@
 
             <!-- logo -->
             <div class="header-navbar-logo justify-content-center align-items-center">
-                <a href="index.html"><img src="image/logo.png" alt="anh logo"></a>
+                <a href="index.html"><img src="image/logo-white.png" alt="anh logo"></a>
             </div>
             <!-- search -->
             <div class="header-navbar-search">
                 <input type="text" placeholder="Nhập tên sản phẩm cần tìm ... ">
                 <div class="search-icon">
-                    <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
-                    <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                    <a href="product.html">
+                        <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
+                        <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                    </a>
                 </div>
 
             </div>
@@ -65,8 +67,11 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
-                        <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
-                        <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                        <p id="cart-number">0</p>
+                        <a href="cart.html">
+                            <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
+                            <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                        </a>
                     </div>
 
                 </button>
@@ -75,11 +80,11 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
-                        <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
-                        <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                        <a href="about">
+                            <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
+                            <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                        </a>
                     </div>
-
-
                 </button>
             </div>
 
@@ -117,22 +122,37 @@
             <li class="breadcrumb-item active" aria-current="page">Bimbim o'sta vị kim chi</li>
         </ol>
     </nav>
-
+    
     <!-- main -->
     <div class="product-detail container">
         <div class="row">
-            <div class="col-lg-5 col-md-8 col-sm-12 col-xs-12 product-detail-left">
+            <div class="col-lg-5  col-sm-12 col-xs-12 product-detail-left">
                 <div class="detail-left-top">
-                    <a href="#"><img class="detail-image" src="image/item-index/item1.png" alt="item1"></a>
+                    <a href="product.html"><img class="detail-image" src="image/item-index/item1.png" alt="item1"></a>
                 </div>
                 <div class="detail-left-bot">
-                    <a href="#">
+                    <a href="product1.html">
                         <img class="detail-image" src="image/item-index/item1.png" alt="item1">
-
                     </a>
-                    <a href="#">
-                        <img class="detail-image" src="image/item-index/item1.png" alt="item1">
 
+                    <a href="product2.html">
+                        <img class="detail-image" src="image/item-product/item-2.png" alt="item2">
+                    </a>
+
+                    <a href="product2.html">
+                        <img class="detail-image" src="image/item-product/item-3.png" alt="item3">
+                    </a>
+
+                    <a href="product2.html">
+                        <img class="detail-image" src="image/item-product/item-4.png" alt="item4">
+                    </a>
+
+                    <a href="product2.html">
+                        <img class="detail-image" src="image/item-product/item-5.png" alt="item5">
+                    </a>
+
+                    <a href="product2.html">
+                        <img class="detail-image" src="image/item-product/item-6.png" alt="item6">
                     </a>
                 </div>
             </div>
@@ -171,7 +191,7 @@
                         <button class="inc">+</button>
                     </div>
                     <div class="product-addtocart">
-                        <a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a>
+                        <p class="btn product-item-addtocart" >Thêm vào giỏ hàng</p>
                     </div>
                 </div>
 
@@ -227,14 +247,16 @@
                     </div>
                 </div>
                 <div class="col-lg-5 information-image">
-                    <img class="w100" src="image/item-index/item1.png" alt="item1">
+                    <img class="w100" src="image/item-index/item-snack.jfif" alt="item1">
                 </div>
             </div>
 
         </div>
     </div>
     <!-- addtocart mobile -->
-    <div class="addtocart-mobile"><a href="#" class="btn product-item-addtocart">Thêm vào giỏ hàng</a></div>
+    <div class="addtocart-mobile">
+        <p  class="btn product-item-addtocart" >Thêm vào giỏ hàng</p>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -247,13 +269,13 @@
                     </a>
                 </p>
                 <div class="collapse" id="collapseExample1">
-                    <a class="footer-link" href="#">Giới thiệu</a>
+                    <a class="footer-link" href="about.html">Giới thiệu</a>
                     <br />
-                    <a class="footer-link" href="#">Quản lý chất lượng</a>
+                    <a class="footer-link" href="about.html">Quản lý chất lượng</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách bảo mật và quyền riêng tư</a>
+                    <a class="footer-link" href="about.html">Chính sách bảo mật và quyền riêng tư</a>
                     <br />
-                    <a class="footer-link" href="#">Điều khoản và điều kiện giao dịch</a>
+                    <a class="footer-link" href="about.html">Điều khoản và điều kiện giao dịch</a>
                     <br />
                 </div>
             </div>
@@ -267,15 +289,15 @@
 
                 </p>
                 <div class="collapse" id="collapseExample2">
-                    <a class="footer-link" href="#">Trung tâm hỗ trợ khách hàng</a>
+                    <a class="footer-link" href="about.html">Trung tâm hỗ trợ khách hàng</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách thanh toán</a>
+                    <a class="footer-link" href="about.html">Chính sách thanh toán</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách giao hàng</a>
+                    <a class="footer-link" href="about.html">Chính sách giao hàng</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách đổi trả</a>
+                    <a class="footer-link" href="about.html">Chính sách đổi trả</a>
                     <br />
-                    <a class="footer-link" href="#">Chính sách chiết khấu và ưu đãi</a>
+                    <a class="footer-link" href="about.html">Chính sách chiết khấu và ưu đãi</a>
                 </div>
 
 
@@ -289,9 +311,9 @@
 
                 </p>
                 <div class="collapse" id="collapseExample3">
-                    <a class="footer-link" href="#">Mua online: 0332154486</a>
+                    <a class="footer-link" href="tel:(+84)332-154-486">Mua online: 0332154486</a>
                     <br />
-                    <a class="footer-link" href="#">Email : vkhanh0236@gmail.com</a>
+                    <a class="footer-link" href="mailto:vkhanh0236@gmail.com">Email : vkhanh0236@gmail.com</a>
                 </div>
 
 
@@ -310,13 +332,18 @@
 
     </footer>
 
+    <!-- popup -->
+    <div class='modall'></div>
+
     <!-- icon up -->
     <div class="icon-up"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- js chung -->
-    <script src="js/main.js"></script>
+    
+    
     <!-- js riêng -->
     <script src="js/item.js"></script>
 

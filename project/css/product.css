@@ -45,3 +45,17 @@
     color: #fff;
     background-color: #ed71a3;
 }
+@media (max-width:576px){
+    .product>div:nth-child(n + 7){
+        display: block;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    .product>div:nth-child(n + 7){
+        display: block;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 992px){
+    
+}

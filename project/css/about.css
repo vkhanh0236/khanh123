@@ -1,0 +1,14 @@
+.section-about{
+    padding: 2rem 10rem;
+}
+.section-about>h1{
+    color: #ed71b3;
+    margin-bottom: 2rem;
+}
+.section-about > img {
+    width: 100%;
+    margin: 2rem 0;
+}
+.breadcrumb{
+    margin-top: 5.5rem;
+}

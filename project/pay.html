@@ -21,7 +21,7 @@
 <body>
 
     <!-- header  -->
-    <header class="header">
+    <header class="header fixed-top">
         <div class="d-flex header-navbar container">
             <!-- dropdown menu -->
 
@@ -50,14 +50,16 @@
 
             <!-- logo -->
             <div class="header-navbar-logo justify-content-center align-items-center">
-                <a href="index.html"><img src="image/logo.png" alt="anh logo"></a>
+                <a href="index.html"><img src="image/logo-white.png" alt="anh logo"></a>
             </div>
             <!-- search -->
             <div class="header-navbar-search">
                 <input type="text" placeholder="Nhập tên sản phẩm cần tìm ... ">
                 <div class="search-icon">
+                    <a href="product.html">
                     <img class="search-default" src="image/MagnifyingGlass-pink1.png" alt="icon-search">
                     <img class="search-hover" src="image/MagnifyingGlass-pink.png" alt="icon-search">
+                    </a>
                 </div>
 
             </div>
@@ -65,8 +67,11 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
+                        <p id="cart-number">0</p>
+                        <a href="cart.html">
                         <img class="button-default" src="image/ShoppingCart-white.png" alt="ShoppingCart">
                         <img class="button-hover" src="image/ShoppingCart-pink.png" alt="ShoppingCart">
+                        </a>
                     </div>
 
                 </button>
@@ -75,11 +80,11 @@
             <div class="header-navbar-button">
                 <button>
                     <div class="navbar-button">
+                        <a href="about.html">
                         <img class="button-default" src="image/UserCircle-white.png" alt="UserCircle">
                         <img class="button-hover" src="image/UserCircle-pink.png" alt="UserCircle">
+                        </a>
                     </div>
-
-
                 </button>
             </div>
 
@@ -106,13 +111,13 @@
             <br />
             <input type="text" id="phone" placeholder="Số điện thoại *">
             <br />
-            <input type="radio" id="others" name="others"><label for="others">Gọi người khác nhận hộ (nếu có)</label>
+            <input type="checkbox" id="others" name="others" ><label for="others">Gọi người khác nhận hộ (nếu có)</label>
         </div>
         <div class="receiving-address">
             <h6>2.Địa chỉ nhận hàng</h6>
             <input type="text" id="address" placeholder="Địa chỉ nhận hàng *">
             <br />
-            <input type="radio" id="ship" name="ship"><label for="ship">Giao hàng tận cửa chung cư , văn phòng</label>
+            <input type="checkbox" id="ship" name="ship"><label for="ship">Giao hàng tận cửa chung cư , văn phòng</label>
         </div>
         <div class="receiving-time">
             <h6>3.Thời gian nhận hàng</h6>
@@ -180,9 +185,9 @@
 
                 </p>
                 <div class="collapse" id="collapseExample3">
-                    <a class="footer-link" href="about.html">Mua online: 0332154486</a>
+                    <a class="footer-link" href="tel:(+84)332-154-486">Mua online: 0332154486</a>
                     <br />
-                    <a class="footer-link" href="about.html">Email : vkhanh0236@gmail.com</a>
+                    <a class="footer-link" href="mailto:vkhanh0236@gmail.com">Email : vkhanh0236@gmail.com</a>
                 </div>
 
 
@@ -201,10 +206,20 @@
 
     </footer>
 
+    <!-- popup -->
+    <div class='modall'></div>
+
     <!-- icon up -->
     <div class="icon-up"><a href="#"><i class="fas fa-arrow-circle-up"></i></a></div>
 
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- js chung -->
+    <script src="js/main.js"></script>
+
+    <!-- js riêng-->
+    <script src="js/pay.js"></script>
 
 
     <!-- js bootstrap -->
