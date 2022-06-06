@@ -17,7 +17,7 @@ function ready() {
     });
 
     $('.product-item-addtocart').click(function () {
-        $('.modall').append(`<div class="alert alert-danger" role="alert">Đã thêm BimBim o'sta cị kim chi vào giỏ hàng </div > `)
+        $('.modall').append(`<div class="alert alert-danger" role="alert">Đã thêm BimBim o'sta vị kim chi vào giỏ hàng </div > `)
         setTimeout(function () {
             $('.modall').empty()
         }, 3000)
